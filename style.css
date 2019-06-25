@@ -1,0 +1,94 @@
+
+body {
+    margin 50%;
+    padding: 0px;
+}
+h1 {
+    font-size: 100px;
+}
+#newPayPeriod {
+    border: 1px solid black;
+}
+tr.alt1 th {
+    background-color: #dddddd;
+    font-size: 12pt;
+    color: #000000;
+    padding-right: 3px;
+}
+tr.alt1 td {
+    background-color: #dddddd;
+    font-size: 12pt; //red
+}
+tr.alt2 th
+{
+    background-color: #eeeeee;
+    font-size: 12pt;
+    color: #000000;
+}
+tr.alt2 td
+{
+    background-color: #eeeeee;
+    font-size: 12pt;
+    color: #000000;
+}
+#ppw table tr td {
+    text-align: right;
+}
+#ppw table tr th {
+    text-align: right;
+    padding-right: 3px;
+}
+#ppw table tr th.rowName {
+    border-right: 1px solid black;
+}
+#ppw table tr th, #ppw table tr td {
+    border-right: 1px dashed black;
+}
+#ppw table thead tr th {
+    border-bottom: 1px solid black;
+}
+
+table {
+    border-spacing: 0px;
+}
+td {
+  padding: 5px;
+}
+td.stylistColumn {
+    /*background-color:eeeeee;*/
+}
+tr.stylistColumn {
+    background-color:eeeeee;
+}
+/* For lower than 700px resolutions */
+@media (max-width: 700px) { ... }
+/* Same as last but with the device orientation on land scape */
+@media (max-width: 700px) and (orientation: landscape) { ... }
+/* Including width and orientation you can add a media type clause,
+   in this case 'tv' */
+@media tv and (min-width: 700px) and (orientation: landscape) { ... }
+/* for low resolution display with background-image */
+.image {
+    background-size: 200px 300px;
+    height: 300px;
+    width: 200px;
+}
+/* for high resolution (Retina) display with background-image */
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+    -repeat;
+        background-size: 200px 400px;
+    /* rest of your styles... */
+    }
+}
+#stylist_selector ul {
+    list-style-type: none;
+}
+#stylist_selector ul li {
+    float:left;
+    display:block;
+        padding-left: 5px;
+
+}
